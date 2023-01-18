@@ -196,7 +196,7 @@ def dump_followers():
 	runner()
 	print('\r[\033[38;5;83m//Rebooting from Cracks..//\033[0m]')
 	tk=[]
-	def booting():
+	def booting(__josif__):
 		try:
 			req=requests.Session()
 			cookie=open('cookie.txt','r').read()
@@ -224,11 +224,9 @@ def dump_followers():
 								except (KeyboardInterrupt,EOFError):
 									pass
 					else:pass
-				except KeyboardInterrupt:
-					print(f'\r Saved! in dump{uidt[0]}-{xc}.txt')
-					xc+=1
-					ts.clear()
-
+				except KeyboardInterrupt:sys.exit()
+				except (KeyError,requests.exceptions.ConnectionError):
+					time.sleep(1)
 					pass
 		except (KeyError,requests.exceptions.ConnectionError):
 			time.sleep(1)
