@@ -1,3 +1,7 @@
+# Scripted by : Md Josif Khan 
+# GitHub      : github.com/josifkhan
+# Contact     : facebook.com/josifvai
+# YouTube     : youtube.com/josifkhan
 from concurrent.futures import ThreadPoolExecutor as threads
 from bs4 import BeautifulSoup as bs
 import os,sys,time,random
